@@ -1,0 +1,7 @@
+{
+  "name": "MaplatiOS",
+  "version": "0.5.4",
+  "dependencies": {
+    "maplat_mobile_gw": "^0.5.5"
+  }
+}
