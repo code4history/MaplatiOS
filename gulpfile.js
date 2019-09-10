@@ -4,8 +4,6 @@ var gulp = require('gulp'),
     unzip = require('gulp-unzip'),
     remoteSrc = require('gulp-remote-src');
 
-var isWin = os.type().toString().match('Windows') !== null;
-
 function removeResource() {
     var files = [
         './mobile_ios_lib/MaplatView/Maplat.bundle',
@@ -43,25 +41,22 @@ function copyAssets() {
     remoteSrc(['assets.zip'], {
         base: 'http://code4history.github.io/MaplatMobileGw/'
     }).pipe(unzip())
-        .pipe(gulp.dest('.'));
-    return gulp.src(['assets/*'], { base: 'assets' })
-        .pipe(gulp.dest('./mobile_ios_sample/mobile_ios_sample'));
-        .pipe(gulp.dest('./mobile_ios_sample/mobile_ios_sample_swift'));
+        .pipe(gulp.dest('.'))
+        .on('end', function() {
+            ['', '_swift'].forEach(function(folder_end) {
+                fs.readdirSync('./assets').forEach(function(res) {
+                    fs.copySync('./assets/' + res, './mobile_ios_sample' + folder_end + '/mobile_ios_sample' + folder_end + '/' + res);
+                });
+            });
+            fs.removeSync('./assets');
+        });
 }
 
-//gulp.parallel('config', 'less'),
 gulp.task('assets_copy', function() {
     removeResource();
     copyResource();
     copyAssets();
     return Promise.resolve();
-    /*removeResource();
-    copyResource(mobileTestCopy);
-    copyResource(mobileBaseCopy);
-    fs.copySync('mobile_test.html', './mobile_android/mobile_android_lib/src/main/res/raw/mobile_html');
-    fs.copySync('mobile_test.html', './mobile_ios/mobile_ios_lib/MaplatView/Maplat.bundle/mobile.html');
-    copyAssets();
-    return Promise.resolve();*/
 });
 
 
