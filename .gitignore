@@ -70,3 +70,10 @@ fastlane/test_output
 # JetBrains
 .idea
 node_modules
+
+# Resources, Assets
+mobile_ios_sample/mobile_ios_sample/maps
+mobile_ios_sample/mobile_ios_sample/tiles
+mobile_ios_sample_swift/mobile_ios_sample_swift/maps
+mobile_ios_sample_swift/mobile_ios_sample_swift/tiles
+mobile_ios_lib/MaplatView/Maplat.bundle

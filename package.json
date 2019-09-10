@@ -3,5 +3,12 @@
   "version": "0.5.4",
   "dependencies": {
     "maplat_mobile_gw": "^0.5.5"
+  },
+  "devDependencies": {
+    "fs-extra": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-remote-src": "^0.4.4",
+    "gulp-unzip": "^1.1.0",
+    "node-fetch": "^2.6.0"
   }
 }
