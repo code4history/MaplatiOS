@@ -5,7 +5,7 @@
     "init": "gulp init"
   },
   "dependencies": {
-    "maplat_mobile_gw": "^0.5.5"
+    "maplat_mobile_gw": "^0.5.6"
   },
   "devDependencies": {
     "fs-extra": "^8.1.0",
