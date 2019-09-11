@@ -1,6 +1,9 @@
 {
   "name": "MaplatiOS",
   "version": "0.5.4",
+  "scripts": {
+    "init": "gulp init"
+  },
   "dependencies": {
     "maplat_mobile_gw": "^0.5.5"
   },

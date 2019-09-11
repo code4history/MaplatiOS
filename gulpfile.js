@@ -52,7 +52,7 @@ function copyAssets() {
         });
 }
 
-gulp.task('assets_copy', function() {
+gulp.task('init', function() {
     removeResource();
     copyResource();
     copyAssets();
