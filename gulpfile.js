@@ -1,8 +1,12 @@
 var gulp = require('gulp'),
     os = require('os'),
     fs = require('fs-extra'),
+    concat = require('gulp-concat'),
+    replace = require('gulp-replace'),
     unzip = require('gulp-unzip'),
     remoteSrc = require('gulp-remote-src');
+
+var pkg = require('./package.json');
 
 function removeResource() {
     var files = [
@@ -56,7 +60,14 @@ gulp.task('init', function() {
     removeResource();
     copyResource();
     copyAssets();
-    return Promise.resolve();
+    return new Promise(function(resolve, reject) {
+        gulp.src(['./mobile_ios_lib/MaplatView/Info.plist'])
+            .pipe(concat('Info.plist'))
+            .pipe(replace(/<key>CFBundleShortVersionString<\/key>\n\t<string>.+<\/string>/g, '<key>CFBundleShortVersionString</key>\n\t<string>' + pkg.version + '</string>'))
+            .on('error', reject)
+            .pipe(gulp.dest('./mobile_ios_lib/MaplatView/'))
+            .on('end', resolve);
+    });
 });
 
 
