@@ -28,7 +28,7 @@ function removeResource() {
 function copyResource() {
     ['dist', 'parts', 'mobile.html'].forEach(function(res1) {
         ['core', 'mobile_gw'].forEach(function(mod) {
-            var check = 'node_modules/maplat_' + mod + '/' + res1;
+            var check = 'node_modules/@maplat/' + mod + '/' + res1;
             if (!fs.existsSync(check)) return;
             if (fs.statSync(check).isDirectory()) {
                 fs.readdirSync(check).forEach(function(res) {
