@@ -1,3 +1,30 @@
+残念ながら、悪質なフリーライダーの発生により、Maplatのスマートフォンライブラリについては、一部利用にあたって制限を加えざるを得なくなりました。
+本ライセンスのVer.1.0を公開した2021年3月6日以降、3年間の時限付きで、MaplatiOS Version 0.7.0以降のバージョンを制限ライセンスで公開します。
+制限期間のライセンス条項は以下の通りです。
+
+1. 本ライセンスが有効な間は、本ライブラリの利用にあたり、利用者はkochizufan@code4history.devにメールにて利用の申し出を行う必要がある。
+2. 利用の申し出を行うことにより、利用者はただちに利用の開始を行うことが可能となるが、Code for Historyからのメールの返答によって利用の差し止めが求められた場合、利用者は直ちにこれに従う必要がある。
+3. 利用の申し出を行う対象は、開発者ではなく、成果物の最終受益者が行う必要がある。たとえば受託開発の場合、開発会社ではなく製品の発注会社が利用の申し出を行うこと。
+4. 利用の申し出を怠って本ライブラリを利用した場合、および利用差し止めに応じずに本ライブラリを利用した場合、当該利用者に対し、Code for Historyはライセンス利用料と特許利用料を請求することができる。
+5. 本ライセンスは3年間の時限が過ぎた2024年3月5日以降、自動的に無効となる。その場合、本ライセンスで公開されたバージョンにまで遡って、Apache 2.0ライセンスでの利用が可能になる。
+6. 本措置は3年の時限を待たずに早期終了する場合があり、その場合は、Apache 2.0ライセンスに置き換えた新規バージョンを公開することにより早期終了を実施する。ただしこの場合、既に本ライセンスで公開済みのバージョンについては、3年の時限を経るまでApache 2.0ライセンスには移行しない。
+7. 本ライセンスで差し止められることなく、利用を許された利用者については、基本的な利用条件は末尾に引用するApache 2.0ライセンスに準ずる。ただし、本ライセンスとApache 2.0ライセンスが矛盾する場合は、本ライセンスが優先される。
+8. また、本ライセンスの記載内容について日本語表記と英語表記が矛盾する場合、日本語表記での内容が優先される。
+
+Unfortunately, due to the occurrence of malicious free-riders, we have had to impose restrictions on the use of Maplat's smartphone libraries.
+Maplat iOS Version 0.7.0 or later will be released under a restricted license for a period of three years after March 6, 2021, when Version 1.0 of this license is released.
+The license terms for the restricted period are as follows:
+
+1. While this license is valid, the user must send an offer of use by e-mail to kochizufan@code4history.dev in order to use the library.
+2. By submitting an offer of use, the user may immediately begin using the library. However, if Code for History responds to an email with requesting an 3. The offer of use must be made by the final beneficiary of the deliverables, not by the developer. For example, in the case of contract development, the offer of use nust be made by the company ordering the product, not by the developer.
+4. Code for History may charge the user a license usage fee and a patent usage fee if the user uses the library without submitting a request for usage, or if the user uses the library without responding to an injunction against usage.
+5. This license will automatically become invalid after March 5, 2024, the expiration of the 3-year period. In that case, the Apache 2.0 license will be available retroactively to the version published under this license.
+6. This measure may be terminated earlier than the three-year time limit, in which case a new version will be released under the Apache 2.0 license. However, in this case, versions already released under this license will not be converted to the Apache 2.0 license until the three-year time limit has expired.
+7. For users who are allowed to use the software without being enjoined under this license, the basic terms of use are the same as the Apache 2.0 license cited at the end of this document. However, if there is any conflict between this License and the Apache 2.0 License, this License shall prevail.
+8. In the event of a conflict between the Japanese and English versions of this license, the Japanese version shall take precedence.
+
+=====
+Reference:
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
